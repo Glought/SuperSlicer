@@ -1142,6 +1142,8 @@ void GCode::_do_export(Print& print, FILE* file, ThumbnailsGeneratorCallback thu
     print.m_print_statistics.color_extruderid_to_used_filament.clear();
     print.m_print_statistics.color_extruderid_to_used_weight.clear();
 
+    print.m_print_statistics.total_weight.clear();
+
     // How many times will be change_layer() called?
     // change_layer() in turn increments the progress bar status.
     m_layer_count = 0;
